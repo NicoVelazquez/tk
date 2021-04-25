@@ -1,0 +1,34 @@
+{
+  "name": "teamknowlogy-nv",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node index.js ",
+    "dev": "cross-env NODE_ENV=development nodemon --exec npm run start",
+    "prod": "cross-env NODE_ENV=production npm run start",
+    "unit-test": "cross-env NODE_ENV=testing mocha ./test/unit/index.test.js --require esm --exit",
+    "test": "npm run unit-test"
+  },
+  "dependencies": {
+    "@hapi/joi": "^15.0.3",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "~4.16.1",
+    "express-async-handler": "^1.1.4",
+    "mongoose": "^5.12.5",
+    "morgan": "~1.9.1",
+    "parse-error": "^0.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^8.3.2",
+    "nodemon": "^2.0.7"
+  }
+}
